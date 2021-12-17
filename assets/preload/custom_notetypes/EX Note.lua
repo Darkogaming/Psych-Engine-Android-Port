@@ -3,7 +3,7 @@ function onCreate()
 	for i = 0, getProperty('unspawnNotes.length')-1 do
 		--Check if the note is an Instakill Note
 		if getPropertyFromGroup('unspawnNotes', i, 'noteType') == 'EX Note' then
-			setPropertyFromGroup('unspawnNotes', i, 'texture', 'nevada/notes/EX Note'); --Change texture
+			setPropertyFromGroup('unspawnNotes', i, 'texture', 'EX Note'); --Change texture
 			setPropertyFromGroup('unspawnNotes', i, 'noteSplashDisabled', true);
 
 			if getPropertyFromGroup('unspawnNotes', i, 'mustPress') == true then --Lets Opponent's instakill notes get ignored
